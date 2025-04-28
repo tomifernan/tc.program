@@ -1,0 +1,305 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tc.Program | Páginas Web</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tc.Program</h1>
+        </div>
+        <nav id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Mis Servicios</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#proceso">¿Como Trabajo?</a>
+            <a href="#preguntas">Preguntas Frecuentes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="inicio">
+        <h1>Bienvenido a Tc.Program</h1>
+        <p> Llevá tu negocio al siguiente nivel con páginas web diseñadas a medida.<br>
+           Soy <strong>Tomás Fernández</strong>, programador especializado en desarrollo web.<br>
+           Si querés que tu negocio crezca, gane presencia online y aumente sus ventas...<br>
+           <strong>¡No dudes en contactarme!</strong></p>
+    </section>
+
+    <section id="servicios">
+        <h2>Mis servicios</h2>
+        <p>Te ofrezco dos variedades de servicios para potenciar tu negocio digital.</p>
+
+        <article>
+            <h3>Servicio Estandar</h3>
+            <p>El Servicio Estandar cuenta con:
+                <ul>
+                    <li>Los usuarios van a poder visualizar todos los productos que ofrece tu tienda.</li>
+                    <li>El usuario va a poder encontrar todas tus redes sociales.</li>
+                    <li>El usuario va a poder encontrar la ubicacion de tu local con google maps</li>
+                </ul>
+            </p>
+        </article>
+
+        <article>
+            <h3>Servicio Premiun</h3>
+            <p>El Servicio Premiun cuenta con:
+                <ul>
+                    <li>El usuario va a poder comprar los productos que ofrece tu tienda atraves de la pagina web.</li>
+                    <li>El pedido va a llegar a tu numero de whatsapp con el listado de los productos que compro el usuario.</li>
+                    <li>Vas a poder agregar todas las demas cosas que ofrece la pagina estandar.</li>
+                </ul>
+            </p>
+        </article>
+
+    </section>
+
+
+
+    <section id="clientes">
+        <h2>Clientes</h2>
+        <p>Confiaron en mí para potenciar su presencia digital:</p>
+
+        <article>
+            <h3>Página realizada para una Artista</h3>
+            <p>Pagina para dispositivos moviles</p>
+            <a href="https://lorenazabala-artes.netlify.app/" target="_blank">Ver página</a>
+        </article>
+
+        <article>
+            <h3>Página realizada para un Autoservicio</h3>
+            <p>Pagina para dispositivos moviles y computadora</p>
+            <a href="https://autoservicio-mutual-maderera-sn.netlify.app/?fbclid=PAZXh0bgNhZW0CMTEAAadIiheNmWYGFvU1j6G8o5q0Jv6IEQkIRdN212m0mZVzjSFkaYWRaCWRSLyOEA_aem_UqooLdGs-e3jp-19oHb7bA">Ver página</a>
+        </article>
+
+        <article>
+            <h3>Página realizada para venta de alimentos</h3>
+            <p>Pagina para dispositivos moviles</p>
+            <a href="https://caful-lomos.netlify.app/?fbclid=PAZXh0bgNhZW0CMTEAAads4-muNbpmitwUa6U11O89_UehemEqMwVHEbxQTfgta3TnytUZ86nSS_8W5g_aem_fi4MJkz5GvN7uNcwBL--Sw">Ver página</a>
+        </article>
+    </section>
+
+    <section id="proceso">
+        <h2>¿Cómo trabajo?</h2>
+        <ol>
+            <li>Reunión inicial para conocer tu idea.</li>
+            <li>Recibo todos los detalles para la pagina web como colores,fuente de letra,logo,imagenes,etc.</li>
+            <li>Diseño y aprobación de la propuesta.</li>
+            <li>Desarrollo de la página web.</li>
+            <li>Entrega final y soporte técnico.</li>
+        </ol>
+    </section>
+
+    <section id="preguntas">
+
+        <h2>Preguntas Frecuentes</h2>
+        <p>¿Tenés dudas? Aquí respondemos algunas de las preguntas más comunes:</p>
+
+        <article>
+            <h3>¿Cuánto tiempo tarda en hacerse la página?</h3>
+            <p>El tiempo de entrega depende del servicio que elijas. El servicio estandar tarda 4 dias mientras que el servicio premium puede tardar 1 semana dependiendo de la cantidad de productos que tendria que cargar.</p>
+        </article>
+
+        <article>
+            <h3>¿Qué pasa si no me gusta la página?</h3>
+            <p>Si no estás satisfecho con el resultado, ofrecemos una revisión gratuita para ajustar lo que necesites.</p>
+        </article>
+
+    </section>
+
+    <section id="contacto">
+        <h2>¡Contactame!</h2>
+        <div class="redes">
+            <a href="https://wa.me/3364039865" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.instagram.com/tc.program/" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Tc.Program | Todos los derechos reservados.
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        const links = nav.querySelectorAll('a');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tc.Program | Páginas Web</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tc.Program</h1>
+        </div>
+        <nav id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Mis Servicios</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#proceso">¿Como Trabajo?</a>
+            <a href="#preguntas">Preguntas Frecuentes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="inicio">
+        <h1>Bienvenidos a Tc.Program</h1>
+        <p> Llevá tu negocio al siguiente nivel con páginas web diseñadas a medida.<br>
+           Soy <strong>Tomás Fernández</strong>, programador especializado en desarrollo web.<br>
+           Si querés que tu negocio crezca, gane presencia online y aumente sus ventas...<br>
+           <strong>¡No dudes en contactarme!</strong></p>
+    </section>
+
+    <section id="servicios">
+        <h2>Mis servicios</h2>
+        <p>Te ofrezco dos variedades de servicios para potenciar tu negocio digital.</p>
+
+        <article>
+            <h3>Servicio Estandar</h3>
+            <p>El Servicio Estandar cuenta con:
+                <ul>
+                    <li>Los usuarios van a poder visualizar todos los productos que ofrece tu tienda.</li>
+                    <li>El usuario va a poder encontrar todas tus redes sociales.</li>
+                    <li>El usuario va a poder encontrar la ubicacion de tu local con google maps</li>
+                </ul>
+            </p>
+        </article>
+
+        <article>
+            <h3>Servicio Premiun</h3>
+            <p>El Servicio Premiun cuenta con:
+                <ul>
+                    <li>El usuario va a poder comprar los productos que ofrece tu tienda atraves de la pagina web.</li>
+                    <li>El pedido va a llegar a tu numero de whatsapp con el listado de los productos que compro el usuario.</li>
+                    <li>Vas a poder agregar todas las demas cosas que ofrece la pagina estandar.</li>
+                </ul>
+            </p>
+        </article>
+
+    </section>
+
+
+
+    <section id="clientes">
+        <h2>Clientes</h2>
+        <p>Confiaron en mí para potenciar su presencia digital:</p>
+
+        <article>
+            <h3>Página realizada para una Artista</h3>
+            <p>Pagina para dispositivos moviles</p>
+            <a href="https://lorenazabala-artes.netlify.app/" target="_blank">Ver página</a>
+        </article>
+
+        <article>
+            <h3>Página realizada para un Autoservicio</h3>
+            <p>Pagina para dispositivos moviles y computadora</p>
+            <a href="https://autoservicio-mutual-maderera-sn.netlify.app/?fbclid=PAZXh0bgNhZW0CMTEAAadIiheNmWYGFvU1j6G8o5q0Jv6IEQkIRdN212m0mZVzjSFkaYWRaCWRSLyOEA_aem_UqooLdGs-e3jp-19oHb7bA">Ver página</a>
+        </article>
+
+        <article>
+            <h3>Página realizada para venta de alimentos</h3>
+            <p>Pagina para dispositivos moviles</p>
+            <a href="https://caful-lomos.netlify.app/?fbclid=PAZXh0bgNhZW0CMTEAAads4-muNbpmitwUa6U11O89_UehemEqMwVHEbxQTfgta3TnytUZ86nSS_8W5g_aem_fi4MJkz5GvN7uNcwBL--Sw">Ver página</a>
+        </article>
+    </section>
+
+    <section id="proceso">
+        <h2>¿Cómo trabajo?</h2>
+        <ol>
+            <li>Reunión inicial para conocer tu idea.</li>
+            <li>Recibo todos los detalles para la pagina web como colores,fuente de letra,logo,imagenes,etc.</li>
+            <li>Diseño y aprobación de la propuesta.</li>
+            <li>Desarrollo de la página web.</li>
+            <li>Entrega final y soporte técnico.</li>
+        </ol>
+    </section>
+
+    <section id="preguntas">
+
+        <h2>Preguntas Frecuentes</h2>
+        <p>¿Tenés dudas? Aquí respondemos algunas de las preguntas más comunes:</p>
+
+        <article>
+            <h3>¿Cuánto tiempo tarda en hacerse la página?</h3>
+            <p>El tiempo de entrega depende del servicio que elijas. El servicio estandar tarda 4 dias mientras que el servicio premium puede tardar 1 semana dependiendo de la cantidad de productos que tendria que cargar.</p>
+        </article>
+
+        <article>
+            <h3>¿Qué pasa si no me gusta la página?</h3>
+            <p>Si no estás satisfecho con el resultado, ofrecemos una revisión gratuita para ajustar lo que necesites.</p>
+        </article>
+
+    </section>
+
+    <section id="contacto">
+        <h2>¡Contactame!</h2>
+        <div class="redes">
+            <a href="https://wa.me/3364039865" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.instagram.com/tc.program/" target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Tc.Program | Todos los derechos reservados.
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        const links = nav.querySelectorAll('a');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+>>>>>>> 6de24f1 (cambio en el titulo principal)

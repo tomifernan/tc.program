@@ -1,0 +1,251 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    color: #00d084;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Header */
+header {
+    background: #121212;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00d084;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#inicio h2 {
+    font-size: 1.8em;
+}
+
+#inicio p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
+}
+
+#clientes h2 {
+    font-size: 1.8em;
+}
+
+article {
+    background: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border: 2px solid black;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #121212;
+}
+
+article ul {
+    list-style: inside square;
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #00d084;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+article a:hover {
+    color: #007a53;
+}
+
+/* Sección "¿Cómo trabajo?" */
+#proceso {
+    background: #fff;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid black;
+}
+
+#proceso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+#proceso h2 {
+    text-align: center;
+    color: #00d084;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+#proceso ol {
+    list-style: inside ;
+    padding-left: 20px;
+}
+
+#proceso li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #333;
+}
+
+#proceso li::marker {
+    color: #00d084;
+    font-weight: bold;
+}
+
+/* Contacto */
+#contacto {
+    background: #121212;
+    color: white;
+}
+
+#contacto h2 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#contacto .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#contacto .redes a {
+    background: #00d084;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#contacto .redes a i {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+#contacto .redes a:hover {
+    background: #007a53;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1a1a1a;
+    color: #aaa;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        background: #121212;
+        width: 100%;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
